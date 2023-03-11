@@ -1,0 +1,60 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/KP-R76/GUI-VTGSSR/main/Source%20library')))()
+
+local Window = OrionLib:MakeWindow({Name = "VTGSSR GUI - @KP-R76", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "SetUp...",
+	Icon = "rbxassetid://12706171419",
+	PremiumOnly = false
+})
+
+wait(3)
+OrionLib:Destroy()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/KP-R76/GUI-VTGSSR/main/Source%20library')))()
+
+OrionLib:MakeNotification({
+	Name = "SETUP",
+	Content = "SetUp Done!",
+	Image = "rbxassetid://12706160099",
+	Time = 5
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KP-R76/Script2/main/MeYou"))()
+wait(5)
+OrionLib:Destroy()
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/KP-R76/GUI-VTGSSR/main/Source%20library')))()
+
+local Window = OrionLib:MakeWindow({Name = "VTGSSR GUI - @KP-R76", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "ANTIBAN / BYPASS",
+	Icon = "rbxassetid://12706182706",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "ANTIBAN BY VTG.SAFE.BOMB"
+})
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0,255,0)
+Frame.Position = UDim2.new(0, 0, 0.40, 0)
+Frame.Size = UDim2.new(0, 90, 0, 30)
+Frame.Active = true
+Frame.Draggable = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(0,255,0)
+TextButton.Size = UDim2.new(0, 90, 0, 30)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "VTGSSR"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 22.000
+TextButton.MouseButton1Click:connect(function()
+end)
